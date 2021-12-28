@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Liquipedia</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta charset="UTF-8" />
+		<link href="./css/style.min.css?c=2" rel="stylesheet" type="text/css" />
+		<meta name="description" content="The esports wiki, the best resource for live updated results, tournament overview, team and player profiles, game information, and more..." />
+		<meta name="keywords" content="esports, wiki, liquipedia, Dota 2, Counter-Strike, VALORANT, PUBG, Rocket League, StarCraft II, Rainbow Six, Apex Legends, League of Legends, Overwatch, Age of Empires, Smash, Warcraft III, Wild Rift, Brood War, Hearthstone, Heroes, Artifact, Halo, Brawl Stars, Free Fire, Call of Duty, Arena of Valor, Fighting Games, Arena FPS, Fortnite, Clash Royale, Pokémon, World of Warcraft, FIFA, Team Fortress, Paladins" />
+		<link href="/commons/extensions/SearchEngineOptimization/resources/images/favicon-196x196.png" rel="icon" type="image/png" sizes="196x196">
+		<link href="/commons/extensions/SearchEngineOptimization/resources/images/favicon-128x128.png" rel="icon" type="image/png" sizes="128x128">
+		<link href="/commons/extensions/SearchEngineOptimization/resources/images/favicon-96x96.png" rel="icon" type="image/png" sizes="96x96">
+		<link href="/commons/extensions/SearchEngineOptimization/resources/images/favicon-32x32.png" rel="icon" type="image/png" sizes="32x32">
+		<link href="/commons/extensions/SearchEngineOptimization/resources/images/favicon-16x16.png" rel="icon" type="image/png" sizes="16x16">
+		<link href="/manifest.json" rel="manifest" />
+		<link href="https://liquipedia.net" rel="canonical" />
+		<meta name="theme-color" content="#00162c" />
+		<meta name="twitter:card" content="summary" />
+		<meta name="twitter:site" content="@LiquipediaNet" />
+		<meta name="twitter:title" content="Liquipedia" />
+		<meta name="twitter:description" content="The esports wiki, the best resource for live updated results, tournament overview, team and player profiles, game information, and more..." />
+		<meta name="twitter:image:src" content="https://liquipedia.net/images/liquipedia_logo.png" />
+		<meta name="twitter:domain" content="liquipedia.net" />
+		<meta property="og:type" content="website" />
+		<meta property="og:image" content="https://liquipedia.net/images/liquipedia_logo.png" />
+		<meta property="og:url" content="https://liquipedia.net" />
+		<meta property="og:title" content="Liquipedia" />
+		<meta property="og:description" content="The esports wiki, the best resource for live updated results, tournament overview, team and player profiles, game information, and more..." />
+		<meta property="og:site_name" content="Liquipedia" />
+		<style>
+			.dota2-box { background-color:#3ee215 }
+			.counterstrike-box { background-color:hsl(59, 65%, 76%) }
+			.valorant-box { background-color:#797575 }
+			.pubg-box { background-color:#d19d84 }
+			.rocketleague-box { background-color:#ffdaae }
+			.starcraft2-box { background-color:#80bfe9 }
+			.rainbowsix-box { background-color:#fbffd4 }
+			.apexlegends-box { background-color:#d49c85 }
+			.leagueoflegends-box { background-color:#a1a864 }
+			.overwatch-box { background-color:#bda0bd }
+			.ageofempires-box { background-color:#a69fc0 }
+			.smash-box { background-color:#c3d6c6 }
+			.warcraft-box { background-color:#7480a5 }
+			.wildrift-box { background-color:#c6e9a5 }
+			.starcraft-box { background-color:#9574c0 }
+			.hearthstone-box { background-color:#dbf18b }
+			.heroes-box { background-color:#bdaac9 }
+			.artifact-box { background-color:#c1fcc4 }
+			.halo-box { background-color:#ab94b9 }
+			.brawlstars-box { background-color:#e08e88 }
+			.freefire-box { background-color:#cecdc8 }
+			.callofduty-box { background-color:#a0b4c4 }
+			.arenaofvalor-box { background-color:#e2d9ce }
+			.fighters-box { background-color:#c7ac76 }
+			.arenafps-box { background-color:#a4c54a }
+			.fortnite-box { background-color:#b3b3b3 }
+			.clashroyale-box { background-color:#d6d6d6 }
+			.pokemon-box { background-color:#ec8b8b }
+			.worldofwarcraft-box { background-color:#bba5ee }
+			.fifa-box { background-color:#d0d6c3 }
+			.teamfortress-box { background-color:#c2e75a }
+			.paladins-box { background-color:#d29dda }
+		</style>
+	</head>
+	<body class="column-3">
+		<div class="global-nav">
+			<span><a href="https://qihl.gg/">qihl</a></span>
+			<span><a href="https://masterleague.net/">Master League</a></span>
+			<span><a href="https://www.liquidlegends.net/">LiquidLegends</a></span>
+			<span><a href="https://www.liquiddota.com/">LiquidDota</a></span>
+			<span><a href="https://tl.net/">TLnet</a></span>
+		</div>
+		<div class="top">
+			<h1>Team Liquid welcomes you to the e-sports wiki</h1>
+			<div id="logo"><img src="./images/lp-logo.svg" alt="liquipedia" /></div>
+			<h2>Made by the e-sports community for the e-sports community. <span id="full-intro"> The best resource for live updated results, tournament overview, team &amp; player profiles, game information, and more&hellip;</span></h2>
+			<div class="content searchwrap">
+				<form id="search" class="search" action="/dota2/index.php">
+					<select id="wikiselect" aria-label="Select a Wiki to search">
+						<option value="dota2">Dota 2</option><option value="counterstrike">Counter-Strike</option><option value="valorant">VALORANT</option><option value="pubg">PUBG</option><option value="rocketleague">Rocket League</option><option value="starcraft2">StarCraft II</option><option value="rainbowsix">Rainbow Six</option><option value="apexlegends">Apex Legends</option><option value="leagueoflegends">League of Legends</option><option value="overwatch">Overwatch</option><option value="ageofempires">Age of Empires</option><option value="smash">Smash</option><option value="warcraft">Warcraft III</option><option value="wildrift">Wild Rift</option><option value="starcraft">Brood War</option><option value="hearthstone">Hearthstone</option><option value="heroes">Heroes</option><option value="artifact">Artifact</option><option value="halo">Halo</option><option value="brawlstars">Brawl Stars</option><option value="freefire">Free Fire</option><option value="callofduty">Call of Duty</option><option value="arenaofvalor">Arena of Valor</option><option value="fighters">Fighting Games</option><option value="arenafps">Arena FPS</option><option value="fortnite">Fortnite</option><option value="clashroyale">Clash Royale</option><option value="pokemon">Pokémon</option><option value="worldofwarcraft">World of Warcraft</option><option value="fifa">FIFA</option><option value="teamfortress">Team Fortress</option><option value="paladins">Paladins</option>						<option value="commons">Commons</option>
+					</select><!--
+					--><input aria-label="Search for" type="search" name="search" placeholder="Search..."><!--
+					--><button type="submit">Search</button>
+				</form>
+			</div>
+		</div>
+		<div class="whitebox">
+						<div class="box-wrap">
+									<div class="dota2-box game-box">
+												<input type="checkbox" class="toggle-button" id="toggle-dota2" />
+						<label for="toggle-dota2" class="toggle-button-label" id="toggle-dota2-label"></label>
+						<div class="wiki-header"><a href="/dota2/Main_Page">Dota 2</a></div>
+						<p id="dota2" class="game-box-content">
+																<a href="/dota2/Huya/Winter_Invitational/2021" title="Huya Dota2 Winter Invitational 2021">Huya Dota2 Winter Invitational 2021</a><br />
+																		<a href="/dota2/Dota_Pro_Circuit/2021-22/1/Western_Europe/Division_I" title="DPC WEU T1: Div. I">DPC WEU T1: Div. I</a><br />
+																		<a href="/dota2/Dota_2_Champions_League/2021/Season_6" title="Dota 2 Champions League 2021 Season 6">Dota 2 Champions League 2021 Season 6</a><br />
+																		<a href="/dota2/Dota_Pro_Circuit/2021-22/1/Southeast_Asia/Division_I" title="DPC SEA 2021/22 Tour 1: Division I">DPC SEA 2021/22 Tour 1: Division I</a><br />
+																		<a href="/dota2/Dota_Pro_Circuit/2021-22/1/Eastern_Europe/Division_I" title="DPC EEU 2021/22 Tour 1: Division I">DPC EEU 2021/22 Tour 1: Division I</a><br />
+															</p>
+					</div>
+									<div class="counterstrike-box game-box">
+												<input type="checkbox" class="toggle-button" id="toggle-counterstrike" />
+						<label for="toggle-counterstrike" class="toggle-button-label" id="toggle-counterstrike-label"></label>
+						<div class="wiki-header"><a href="/counterstrike/Main_Page">Counter-Strike</a></div>
+						<p id="counterstrike" class="game-box-content">
+																<a href="/counterstrike/Natus_Vincere" title="Natus Vincere">Natus Vincere</a><br />
+																		<a href="/counterstrike/BLAST/Premier/2021/World_Final" title="BLAST Premier: World Final 2021">BLAST Premier: World Final 2021</a><br />
+																		<a href="/counterstrike/Team_Liquid" title="Team Liquid">Team Liquid</a><br />
+																		<a href="/counterstrike/Funspark/ULTI/2021/Asia/Playoffs/2" title="Funspark ULTI 2021: Asia Playoffs #2">Funspark ULTI 2021: Asia Playoffs #2</a><br />
+																		<a href="/counterstrike/S1mple" title="s1mple">s1mple</a><br />
+															</p>
+					</div>
+									<div class="valorant-box game-box">
+												<input type="checkbox" class="toggle-button" id="toggle-valorant" />
+						<label for="toggle-valorant" class="toggle-button-label" id="toggle-valorant-label"></label>
+						<div class="wiki-header"><a href="/valorant/Main_Page">VALORANT</a></div>
+						<p id="valorant" class="game-box-content">
+																<a href="/valorant/VALORANT_Champions_Tour/2021/Champions" title="VALORANT Champions 2021">VALORANT Champions 2021</a><br />
+																		<a href="/valorant/Zunba" title="zunba">zunba</a><br />
+																		<a href="/valorant/TenZ" title="TenZ">TenZ</a><br />
+																		<a href="/valorant/Vision_Strikers" title="Vision Strikers">Vision Strikers</a><br />
+																		<a href="/valorant/Sentinels" title="Sentinels">Sentinels</a><br />
+															</p>
+					</div>
+									<div class="pubg-box game-box">
+												<input type="checkbox" class="toggle-button" id="toggle-pubg" />
+						<label for="toggle-pubg" class="toggle-button-label" id="toggle-pubg-label"></label>
+						<div class="wiki-header"><a href="/pubg/Main_Page">PUBG</a></div>
+						<p id="pubg" class="game-box-content">
+																<a href="/pubg/Battlegrounds_Mobile_India_Series/2021" title="Battlegrounds Mobile India Series 2021">Battlegrounds Mobile India Series 2021</a><br />
+																		<a href="/pubg/PUBG_Mobile_Global_Championship/2021" title="PMGC 2021 - Grand Finals">PMGC 2021 - Grand Finals</a><br />
+																		<a href="/pubg/PUBG_Mobile_Global_Championship/2021/East" title="PMGC 2021: League - East">PMGC 2021: League - East</a><br />
+																		<a href="/pubg/AfreecaTV_PUBG_League/2021/Winter_Season" title="AfreecaTV PUBG League: 2021 Winter Season">AfreecaTV PUBG League: 2021 Winter Season</a><br />
+																		<a href="/pubg/Battlegrounds_Mobile_India_Series/2021/The_Grind" title="BGIS 2021 - Series: TG">BGIS 2021 - Series: TG</a><br />
+															</p>
+					</div>
+									<div class="rocketleague-box game-box">
+												<input type="checkbox" class="toggle-button" id="toggle-rocketleague" />
+						<label for="toggle-rocketleague" class="toggle-button-label" id="toggle-rocketleague-label"></label>
+						<div class="wiki-header"><a href="/rocketleague/Main_Page">Rocket League</a></div>
+						<p id="rocketleague" class="game-box-content">
+																<a href="/rocketleague/Rumours" title="Transfer Rumours: Latest">Transfer Rumours: Latest</a><br />
+																		<a href="/rocketleague/Rocket_League_Championship_Series/2021-22/Fall" title="RLCS 2021-22 - Fall Major">RLCS 2021-22 - Fall Major</a><br />
+																		<a href="/rocketleague/Transfers" title="Player Transfers: Latest">Player Transfers: Latest</a><br />
+																		<a href="/rocketleague/List_of_player_camera_settings" title="List of player camera settings">List of player camera settings</a><br />
+																		<a href="/rocketleague/Jstn" title="jstn.">jstn.</a><br />
+															</p>
+					</div>
+									<div class="starcraft2-box game-box">
+												<input type="checkbox" class="toggle-button" id="toggle-starcraft2" />
+						<label for="toggle-starcraft2" class="toggle-button-label" id="toggle-starcraft2-label"></label>
+						<div class="wiki-header"><a href="/starcraft2/Main_Page">StarCraft II</a></div>
+						<p id="starcraft2" class="game-box-content">
+																<a href="/starcraft2/The_SDC_Boxing_Day_Rumble" title="The SDC Boxing Day Rumble">The SDC Boxing Day Rumble</a><br />
+																		<a href="/starcraft2/ESL_Pro_Tour/2021/22/Masters/Last_Chance" title="DH SC2 Masters 2021: Last Chance 2022">DH SC2 Masters 2021: Last Chance 2022</a><br />
+																		<a href="/starcraft2/World_Team_League/2021/Winter" title="World Team League 2021 Winter">World Team League 2021 Winter</a><br />
+																		<a href="/starcraft2/IEM_Katowice/2022" title="IEM Katowice 2022">IEM Katowice 2022</a><br />
+																		<a href="/starcraft2/GG_year_2021" title="GG year 2021">GG year 2021</a><br />
+															</p>
+					</div>
+									<div class="rainbowsix-box game-box">
+												<input type="checkbox" class="toggle-button" id="toggle-rainbowsix" />
+						<label for="toggle-rainbowsix" class="toggle-button-label" id="toggle-rainbowsix-label"></label>
+						<div class="wiki-header"><a href="/rainbowsix/Main_Page">Rainbow Six</a></div>
+						<p id="rainbowsix" class="game-box-content">
+																<a href="/rainbowsix/Six_Invitational/2022" title="Six Invitational 2022">Six Invitational 2022</a><br />
+																		<a href="/rainbowsix/GAKGUAY_Scrimmage/Season_4" title="GAKGUAY Scrimmage - Season 4">GAKGUAY Scrimmage - Season 4</a><br />
+																		<a href="/rainbowsix/Six_Invitational/2022/Asia_Pacific" title="SI 2022 - APAC: CQ">SI 2022 - APAC: CQ</a><br />
+																		<a href="/rainbowsix/Six_Invitational/2022/Europe" title="SI 2022 - Europe: CQ">SI 2022 - Europe: CQ</a><br />
+																		<a href="/rainbowsix/ASTRO" title="ASTRO">ASTRO</a><br />
+															</p>
+					</div>
+									<div class="apexlegends-box game-box">
+												<input type="checkbox" class="toggle-button" id="toggle-apexlegends" />
+						<label for="toggle-apexlegends" class="toggle-button-label" id="toggle-apexlegends-label"></label>
+						<div class="wiki-header"><a href="/apexlegends/Main_Page">Apex Legends</a></div>
+						<p id="apexlegends" class="game-box-content">
+																<a href="/apexlegends/Huya/Tiger_Roaring_Cup/1/Qualifiers" title="Huya - Tiger Roaring Cup #1 - Qualifiers">Huya - Tiger Roaring Cup #1 - Qualifiers</a><br />
+																		<a href="/apexlegends/Master_Cup" title="Master Cup">Master Cup</a><br />
+																		<a href="/apexlegends/Douyu/Apex_League/Season_2/Qualifiers" title="Douyu League S2 QA">Douyu League S2 QA</a><br />
+																		<a href="/apexlegends/Huya/Tiger_Roaring_Cup/1" title="Huya - Tiger Roaring Cup #1">Huya - Tiger Roaring Cup #1</a><br />
+																		<a href="/apexlegends/Aceu" title="aceu">aceu</a><br />
+															</p>
+					</div>
+									<div class="leagueoflegends-box game-box">
+												<input type="checkbox" class="toggle-button" id="toggle-leagueoflegends" />
+						<label for="toggle-leagueoflegends" class="toggle-button-label" id="toggle-leagueoflegends-label"></label>
+						<div class="wiki-header"><a href="/leagueoflegends/Main_Page">League of Legends</a></div>
+						<p id="leagueoflegends" class="game-box-content">
+																<a href="/leagueoflegends/LEC/2022/Spring" title="LEC Spring 2022">LEC Spring 2022</a><br />
+																		<a href="/leagueoflegends/Demacia_Cup/2021" title="Demacia Cup 2021">Demacia Cup 2021</a><br />
+																		<a href="/leagueoflegends/World_Championship/2021" title="2021 World Championship">2021 World Championship</a><br />
+																		<a href="/leagueoflegends/LPL/2022/Spring" title="LPL Spring 2022">LPL Spring 2022</a><br />
+																		<a href="/leagueoflegends/ESports_Connected" title="ESports Connected">ESports Connected</a><br />
+															</p>
+					</div>
+									<div class="overwatch-box game-box">
+												<input type="checkbox" class="toggle-button" id="toggle-overwatch" />
+						<label for="toggle-overwatch" class="toggle-button-label" id="toggle-overwatch-label"></label>
+						<div class="wiki-header"><a href="/overwatch/Main_Page">Overwatch</a></div>
+						<p id="overwatch" class="game-box-content">
+																<a href="/overwatch/Player_Transfers" title="Player Transfers">Player Transfers</a><br />
+																		<a href="/overwatch/Los_Angeles_Valiant" title="Los Angeles Valiant">Los Angeles Valiant</a><br />
+																		<a href="/overwatch/Tong_Xiaodong" title="ColdEst">ColdEst</a><br />
+																		<a href="/overwatch/San_Francisco_Shock" title="San Francisco Shock">San Francisco Shock</a><br />
+																		<a href="/overwatch/Los_Angeles_Gladiators" title="Los Angeles Gladiators">Los Angeles Gladiators</a><br />
+															</p>
+					</div>
+									<div class="ageofempires-box game-box">
+												<input type="checkbox" class="toggle-button" id="toggle-ageofempires" />
+						<label for="toggle-ageofempires" class="toggle-button-label" id="toggle-ageofempires-label"></label>
+						<div class="wiki-header"><a href="/ageofempires/Main_Page">Age of Empires</a></div>
+						<p id="ageofempires" class="game-box-content">
+																<a href="/ageofempires/SteelSeries_Prime_Cup" title="SteelSeries Prime Cup">SteelSeries Prime Cup</a><br />
+																		<a href="/ageofempires/Wandering_Warriors_Cup" title="Wandering Warriors Cup">Wandering Warriors Cup</a><br />
+																		<a href="/ageofempires/Age_of_Empires_IV/Tournaments" title="Age of Empires IV: Tournaments">Age of Empires IV: Tournaments</a><br />
+																		<a href="/ageofempires/Master_of_HyperRandom" title="Master of HyperRandom">Master of HyperRandom</a><br />
+																		<a href="/ageofempires/Age_of_Empires_II/S-Tier_Tournaments" title="Age of Empires II: S-Tier Tournaments">Age of Empires II: S-Tier Tournaments</a><br />
+															</p>
+					</div>
+									<div class="smash-box game-box">
+												<input type="checkbox" class="toggle-button" id="toggle-smash" />
+						<label for="toggle-smash" class="toggle-button-label" id="toggle-smash-label"></label>
+						<div class="wiki-header"><a href="/smash/Main_Page">Smash</a></div>
+						<p id="smash" class="game-box-content">
+																<a href="/smash/Major_Tournaments/Ultimate" title="Major Tournaments: Ultimate">Major Tournaments: Ultimate</a><br />
+																		<a href="/smash/SSBMRank" title="SSBMRank">SSBMRank</a><br />
+																		<a href="/smash/Smash_Summit/12" title="Smash Summit 12">Smash Summit 12</a><br />
+																		<a href="/smash/Smash_World_Tour/2021/Championship/Ultimate" title="SWT 2021 Ultimate Championship">SWT 2021 Ultimate Championship</a><br />
+																		<a href="/smash/PGRU" title="PGRU">PGRU</a><br />
+															</p>
+					</div>
+									<div class="warcraft-box game-box">
+												<input type="checkbox" class="toggle-button" id="toggle-warcraft" />
+						<label for="toggle-warcraft" class="toggle-button-label" id="toggle-warcraft-label"></label>
+						<div class="wiki-header"><a href="/warcraft/Main_Page">Warcraft III</a></div>
+						<p id="warcraft" class="game-box-content">
+																<a href="/warcraft/Pandaren_Brewmaster_Cup" title="Pandaren Brewmaster Cup">Pandaren Brewmaster Cup</a><br />
+																		<a href="/warcraft/Show_Cup/5" title="Show Cup 5">Show Cup 5</a><br />
+																		<a href="/warcraft/Christmas_2v2" title="Christmas 2v2">Christmas 2v2</a><br />
+																		<a href="/warcraft/Happy" title="Happy">Happy</a><br />
+																		<a href="/warcraft/World_Champions_League/2021" title="World Champions League 2021">World Champions League 2021</a><br />
+															</p>
+					</div>
+									<div class="wildrift-box game-box">
+												<input type="checkbox" class="toggle-button" id="toggle-wildrift" />
+						<label for="toggle-wildrift" class="toggle-button-label" id="toggle-wildrift-label"></label>
+						<div class="wiki-header"><a href="/wildrift/Main_Page">Wild Rift</a></div>
+						<p id="wildrift" class="game-box-content">
+																<a href="/wildrift/WRL/2022/National_Qualifier" title="Wild Rift League 2022: National Qualifier">Wild Rift League 2022: National Qualifier</a><br />
+																		<a href="/wildrift/WCK/2022/Preseason" title="WCK 2022 Preseason Invitational">WCK 2022 Preseason Invitational</a><br />
+																		<a href="/wildrift/WRL/2022/National_Qualifier/Stage_1/Group_D" title="WRL 2022 Nationals Stage 1D">WRL 2022 Nationals Stage 1D</a><br />
+																		<a href="/wildrift/WRL/2022/National_Qualifier/Stage_1/Group_A" title="WRL 2022 Nationals Stage 1A">WRL 2022 Nationals Stage 1A</a><br />
+																		<a href="/wildrift/WRL/2022/National_Qualifier/Stage_1/Group_B" title="WRL 2022 Nationals Stage 1B">WRL 2022 Nationals Stage 1B</a><br />
+															</p>
+					</div>
+									<div class="starcraft-box game-box">
+												<input type="checkbox" class="toggle-button" id="toggle-starcraft" />
+						<label for="toggle-starcraft" class="toggle-button-label" id="toggle-starcraft-label"></label>
+						<div class="wiki-header"><a href="/starcraft/Main_Page">Brood War</a></div>
+						<p id="starcraft" class="game-box-content">
+																<a href="/starcraft/AfreecaTV_StarCraft_Team_League/3" title="AfreecaTV StarCraft Team League Season 3">AfreecaTV StarCraft Team League Season 3</a><br />
+																		<a href="/starcraft/Deathfate_Duel_Series/20" title="Deathfate Duel Series 20: TerrOr vs Bonyth">Deathfate Duel Series 20: TerrOr vs Bonyth</a><br />
+																		<a href="/starcraft/AfreecaTV_StarCraft_League_Remastered/12" title="ASL Season 12">ASL Season 12</a><br />
+																		<a href="/starcraft/Bombastic_StarLeague/13" title="Bombastic StarLeague 13">Bombastic StarLeague 13</a><br />
+																		<a href="/starcraft/Flash" title="Flash">Flash</a><br />
+															</p>
+					</div>
+									<div class="hearthstone-box game-box">
+												<input type="checkbox" class="toggle-button" id="toggle-hearthstone" />
+						<label for="toggle-hearthstone" class="toggle-button-label" id="toggle-hearthstone-label"></label>
+						<div class="wiki-header"><a href="/hearthstone/Main_Page">Hearthstone</a></div>
+						<p id="hearthstone" class="game-box-content">
+																<a href="/hearthstone/Hearthstone_World_Championship_2021" title="Hearthstone World Championship 2021">Hearthstone World Championship 2021</a><br />
+																		<a href="/hearthstone/Hearthstone_World_Championship_2020" title="Hearthstone World Championship 2020">Hearthstone World Championship 2020</a><br />
+																		<a href="/hearthstone/Posesi" title="posesi">posesi</a><br />
+																		<a href="/hearthstone/SilverName" title="SilverName">SilverName</a><br />
+																		<a href="/hearthstone/Thijs" title="Thijs">Thijs</a><br />
+															</p>
+					</div>
+									<div class="heroes-box game-box">
+												<input type="checkbox" class="toggle-button" id="toggle-heroes" />
+						<label for="toggle-heroes" class="toggle-button-label" id="toggle-heroes-label"></label>
+						<div class="wiki-header"><a href="/heroes/Main_Page">Heroes</a></div>
+						<p id="heroes" class="game-box-content">
+																<a href="/heroes/Community_Clash_League/Season_3" title="Community Clash League - Season 3">Community Clash League - Season 3</a><br />
+																		<a href="/heroes/JayPL" title="JayPL">JayPL</a><br />
+																		<a href="/heroes/Tier_1_Tournaments" title="Tier 1 Tournaments">Tier 1 Tournaments</a><br />
+																		<a href="/heroes/Community_Clash_League/Season_3/Playoffs" title="Community Clash League - Season 3 - Playoffs">Community Clash League - Season 3 - Playoffs</a><br />
+																		<a href="/heroes/Defrost_Miami_LAN" title="Defrost Miami LAN">Defrost Miami LAN</a><br />
+															</p>
+					</div>
+									<div class="artifact-box game-box">
+												<input type="checkbox" class="toggle-button" id="toggle-artifact" />
+						<label for="toggle-artifact" class="toggle-button-label" id="toggle-artifact-label"></label>
+						<div class="wiki-header"><a href="/artifact/Main_Page">Artifact</a></div>
+						<p id="artifact" class="game-box-content">
+																<a href="/artifact/PORNO" title="PORNO">PORNO</a><br />
+																		<a href="/artifact/Virtus.pro" title="Virtus.pro">Virtus.pro</a><br />
+																		<a href="/artifact/The_Requiem_Tournament_Series/Constructed" title="The Requiem Tournament Series - Constructed">The Requiem Tournament Series - Constructed</a><br />
+																		<a href="/artifact/Hyped" title="Hyped">Hyped</a><br />
+																		<a href="/artifact/Team_Liquid" title="Team Liquid">Team Liquid</a><br />
+															</p>
+					</div>
+							</div>
+		</div>
+		<h2 id="commons-wiki">Commons Wiki</h2>
+		<h3>The commons wiki is a wiki used to help operate the other wikis</h3>
+		<div class="whitebox">
+			<div class="content">
+				<p>The commons wiki is the file repository for all our wikis. Images and other files uploaded here can be used across all of the wikis. The same holds true for templates uploaded here.</p>
+				<ul class="flatlist">
+					<li><a href="/commons/Main_Page">Commons Wiki</a></li>
+					<li><a href="/commons/Special:Upload">File Upload</a></li>
+					<li><a href="/commons/Copyrights_Repository">Copyrights Repository</a></li>
+					<li><a href="/commons/Special:RunQuery/Find_images">Find Images</a></li>
+					<li><a href="/commons/Liquipedia:Latest_Uploads">Latest Uploads</a></li>
+				</ul>
+			</div>
+		</div>
+		<h2 id="alpha-wikis">Alpha Wikis</h2>
+		<h3>Alpha wikis are wikis that are still in the building process</h3>
+		<div class="whitebox">
+			<div class="content">
+				<p>In addition to our standard wikis we are also allowing people to create new wikis that we host and help form. If you wish to start a wiki not listed below:</p>
+				<p class="btn-wrap"><a class="btn" target="_blank" href="https://goo.gl/forms/kF0dCtJzHT">Fill in this form</a></p>
+			</div>
+			<div class="box-wrap">
+									<div class="halo-box game-box">
+													<div class="badge-new">NEW!</div>
+												<input type="checkbox" class="toggle-button" id="toggle-halo" />
+						<label for="toggle-halo" class="toggle-button-label" id="toggle-halo-label"></label>
+						<div class="wiki-header"><a href="/halo/Main_Page">Halo</a></div>
+						<p id="halo" class="game-box-content">
+																<a href="/halo/Halo_Championship_Series/2021/Kickoff_Major" title="Halo Championship Series 2021: Kickoff Major">Halo Championship Series 2021: Kickoff Major</a><br />
+																		<a href="/halo/FaZe_Clan" title="FaZe Clan">FaZe Clan</a><br />
+																		<a href="/halo/Halo_Championship_Series/2021-22/Split_1/North_America/Pro_Series/1" title="HCS 2021-22 North America Pro Series 1">HCS 2021-22 North America Pro Series 1</a><br />
+																		<a href="/halo/Cloud9" title="Cloud9">Cloud9</a><br />
+																		<a href="/halo/Snip3down" title="Snip3down">Snip3down</a><br />
+															</p>
+					</div>
+									<div class="brawlstars-box game-box">
+													<div class="badge-new">NEW!</div>
+												<input type="checkbox" class="toggle-button" id="toggle-brawlstars" />
+						<label for="toggle-brawlstars" class="toggle-button-label" id="toggle-brawlstars-label"></label>
+						<div class="wiki-header"><a href="/brawlstars/Main_Page">Brawl Stars</a></div>
+						<p id="brawlstars" class="game-box-content">
+																<a href="/brawlstars/Gamestars/Season_2/Finals/Playoffs" title="Gamestars S2: 1st Intl. Final Playoffs">Gamestars S2: 1st Intl. Final Playoffs</a><br />
+																		<a href="/brawlstars/Gamestars/Season_2" title="Gamestars S2: Intl. Finals">Gamestars S2: Intl. Finals</a><br />
+																		<a href="/brawlstars/Brawl_Stars_World_Finals/2021" title="Brawl Stars World Finals 2021">Brawl Stars World Finals 2021</a><br />
+																		<a href="/brawlstars/Queso_Cup/Brawlywood/Europe/Division_1" title="Queso Cup Brawlywood: Europe - Division 1">Queso Cup Brawlywood: Europe - Division 1</a><br />
+																		<a href="/brawlstars/Natus_Vincere" title="Natus Vincere">Natus Vincere</a><br />
+															</p>
+					</div>
+									<div class="freefire-box game-box">
+												<input type="checkbox" class="toggle-button" id="toggle-freefire" />
+						<label for="toggle-freefire" class="toggle-button-label" id="toggle-freefire-label"></label>
+						<div class="wiki-header"><a href="/freefire/Main_Page">Free Fire</a></div>
+						<p id="freefire" class="game-box-content">
+																<a href="/freefire/Free_Fire_Pro_League/India/2021/Winter" title="Free Fire Pro League India 2021 Winter">Free Fire Pro League India 2021 Winter</a><br />
+																		<a href="/freefire/Total_Gaming_eSports" title="Total Gaming eSports">Total Gaming eSports</a><br />
+																		<a href="/freefire/Free_Fire_World_Series/2021/Singapore" title="Free Fire World Series 2021 Singapore">Free Fire World Series 2021 Singapore</a><br />
+																		<a href="/freefire/World_Esports_Cup/India_Qualifier" title="World Esports Cup: India Finals">World Esports Cup: India Finals</a><br />
+																		<a href="/freefire/Asia_Championship/2021" title="Asia Championship 2021">Asia Championship 2021</a><br />
+															</p>
+					</div>
+									<div class="callofduty-box game-box">
+												<input type="checkbox" class="toggle-button" id="toggle-callofduty" />
+						<label for="toggle-callofduty" class="toggle-button-label" id="toggle-callofduty-label"></label>
+						<div class="wiki-header"><a href="/callofduty/Main_Page">Call of Duty</a></div>
+						<p id="callofduty" class="game-box-content">
+																<a href="/callofduty/Call_of_Duty_Mobile_World_Championship/2021" title="Call of Duty Mobile World Championship 2021">Call of Duty Mobile World Championship 2021</a><br />
+																		<a href="/callofduty/Call_of_Duty_Mobile_World_Championship/2021/East" title="CODM Champs 2021 - East Finals">CODM Champs 2021 - East Finals</a><br />
+																		<a href="/callofduty/Call_of_Duty_Mobile_World_Championship/2021/West" title="CODM Champs 2021 - West Finals">CODM Champs 2021 - West Finals</a><br />
+																		<a href="/callofduty/Master" title="Master">Master</a><br />
+																		<a href="/callofduty/Call_of_Duty_Mobile_World_Championship/2021/Garena" title="CODM Champs 2021 - Garena">CODM Champs 2021 - Garena</a><br />
+															</p>
+					</div>
+									<div class="arenaofvalor-box game-box">
+												<input type="checkbox" class="toggle-button" id="toggle-arenaofvalor" />
+						<label for="toggle-arenaofvalor" class="toggle-button-label" id="toggle-arenaofvalor-label"></label>
+						<div class="wiki-header"><a href="/arenaofvalor/Main_Page">Arena of Valor</a></div>
+						<p id="arenaofvalor" class="game-box-content">
+																<a href="/arenaofvalor/King_Pro_League/2022/Spring/Promotion" title="King Pro League Spring 2022 - Promotion">King Pro League Spring 2022 - Promotion</a><br />
+																		<a href="/arenaofvalor/Arena_of_Valor_International_Championship/2021" title="AIC 2021">AIC 2021</a><br />
+																		<a href="/arenaofvalor/King_Pro_League/2021/Fall" title="King Pro League Fall 2021">King Pro League Fall 2021</a><br />
+																		<a href="/arenaofvalor/King_Pro_League/2021/Spring" title="King Pro League Spring 2021">King Pro League Spring 2021</a><br />
+																		<a href="/arenaofvalor/Arena_of_Valor_World_Cup/2022" title="Arena of Valor World Cup 2022">Arena of Valor World Cup 2022</a><br />
+															</p>
+					</div>
+									<div class="fighters-box game-box">
+												<input type="checkbox" class="toggle-button" id="toggle-fighters" />
+						<label for="toggle-fighters" class="toggle-button-label" id="toggle-fighters-label"></label>
+						<div class="wiki-header"><a href="/fighters/Main_Page">Fighting Games</a></div>
+						<p id="fighters" class="game-box-content">
+																<a href="/fighters/SonicFox" title="SonicFox">SonicFox</a><br />
+																		<a href="/fighters/Capcom_Cup/8" title="Capcom Cup VIII">Capcom Cup VIII</a><br />
+																		<a href="/fighters/Arslan_Ash" title="Arslan Ash">Arslan Ash</a><br />
+																		<a href="/fighters/Knee" title="Knee">Knee</a><br />
+																		<a href="/fighters/Gllty" title="gllty">gllty</a><br />
+															</p>
+					</div>
+									<div class="arenafps-box game-box">
+												<input type="checkbox" class="toggle-button" id="toggle-arenafps" />
+						<label for="toggle-arenafps" class="toggle-button-label" id="toggle-arenafps-label"></label>
+						<div class="wiki-header"><a href="/arenafps/Main_Page">Arena FPS</a></div>
+						<p id="arenafps" class="game-box-content">
+																<a href="/arenafps/Eggwp/Weekly_Series/43" title="eggwp Weekly Series #43">eggwp Weekly Series #43</a><br />
+																		<a href="/arenafps/Happy_New_Frags!!" title="Happy New Frags">Happy New Frags</a><br />
+																		<a href="/arenafps/Eggwp/Weekly_Series/41" title="eggwp Weekly Series #41">eggwp Weekly Series #41</a><br />
+																		<a href="/arenafps/Rapha" title="rapha">rapha</a><br />
+																		<a href="/arenafps/CYpheR" title="cYpheR">cYpheR</a><br />
+															</p>
+					</div>
+									<div class="fortnite-box game-box">
+												<input type="checkbox" class="toggle-button" id="toggle-fortnite" />
+						<label for="toggle-fortnite" class="toggle-button-label" id="toggle-fortnite-label"></label>
+						<div class="wiki-header"><a href="/fortnite/Main_Page">Fortnite</a></div>
+						<p id="fortnite" class="game-box-content">
+																<a href="/fortnite/Fortnite_World_Cup/2019/Finals/Solo" title="Fortnite World Cup Finals - Solo">Fortnite World Cup Finals - Solo</a><br />
+																		<a href="/fortnite/FaZe_Clan" title="FaZe Clan">FaZe Clan</a><br />
+																		<a href="/fortnite/Team_Liquid" title="Team Liquid">Team Liquid</a><br />
+																		<a href="/fortnite/Bugha" title="Bugha">Bugha</a><br />
+																		<a href="/fortnite/Tier_1_Tournaments" title="Tier 1 Tournaments">Tier 1 Tournaments</a><br />
+															</p>
+					</div>
+									<div class="clashroyale-box game-box">
+												<input type="checkbox" class="toggle-button" id="toggle-clashroyale" />
+						<label for="toggle-clashroyale" class="toggle-button-label" id="toggle-clashroyale-label"></label>
+						<div class="wiki-header"><a href="/clashroyale/Main_Page">Clash Royale</a></div>
+						<p id="clashroyale" class="game-box-content">
+																<a href="/clashroyale/Clash_Royale_League/2021/World_Finals" title="Clash Royale League 2021 World Finals">Clash Royale League 2021 World Finals</a><br />
+																		<a href="/clashroyale/Surgical_Goblin" title="Surgical Goblin">Surgical Goblin</a><br />
+																		<a href="/clashroyale/Mugi" title="Mugi">Mugi</a><br />
+																		<a href="/clashroyale/Team_Queso" title="Team Queso">Team Queso</a><br />
+																		<a href="/clashroyale/Mohamed_Light" title="Mohamed Light">Mohamed Light</a><br />
+															</p>
+					</div>
+									<div class="pokemon-box game-box">
+												<input type="checkbox" class="toggle-button" id="toggle-pokemon" />
+						<label for="toggle-pokemon" class="toggle-button-label" id="toggle-pokemon-label"></label>
+						<div class="wiki-header"><a href="/pokemon/Main_Page">Pokémon</a></div>
+						<p id="pokemon" class="game-box-content">
+																<a href="/pokemon/Formats/VGC/2021/Series_11" title="Pokémon VGC 2021 Format: Series 11">Pokémon VGC 2021 Format: Series 11</a><br />
+																		<a href="/pokemon/Formats/VGC/2021/Series_10" title="Pokémon VGC 2021 Format: Series 10">Pokémon VGC 2021 Format: Series 10</a><br />
+																		<a href="/pokemon/Wolfey" title="Wolfey">Wolfey</a><br />
+																		<a href="/pokemon/Pokémon_UNITE_AKB48_Group_Invitational" title="Pokémon UNITE AKB48 Group Invitational">Pokémon UNITE AKB48 Group Invitational</a><br />
+																		<a href="/pokemon/Formats/VGC" title="Pokémon VGC Formats">Pokémon VGC Formats</a><br />
+															</p>
+					</div>
+									<div class="worldofwarcraft-box game-box">
+												<input type="checkbox" class="toggle-button" id="toggle-worldofwarcraft" />
+						<label for="toggle-worldofwarcraft" class="toggle-button-label" id="toggle-worldofwarcraft-label"></label>
+						<div class="wiki-header"><a href="/worldofwarcraft/Main_Page">World of Warcraft</a></div>
+						<p id="worldofwarcraft" class="game-box-content">
+																<a href="/worldofwarcraft/Jahmilli" title="Jahmilli">Jahmilli</a><br />
+																		<a href="/worldofwarcraft/Whaazz" title="Whaazz">Whaazz</a><br />
+																		<a href="/worldofwarcraft/Arena_World_Championship/2021/NA_Grand_Finals" title="AWC 2021 NA Grand Finals">AWC 2021 NA Grand Finals</a><br />
+																		<a href="/worldofwarcraft/Arena_World_Championship/2019" title="Arena World Championship 2019">Arena World Championship 2019</a><br />
+																		<a href="/worldofwarcraft/Pikaboo" title="Pikaboo">Pikaboo</a><br />
+															</p>
+					</div>
+									<div class="fifa-box game-box">
+												<input type="checkbox" class="toggle-button" id="toggle-fifa" />
+						<label for="toggle-fifa" class="toggle-button-label" id="toggle-fifa-label"></label>
+						<div class="wiki-header"><a href="/fifa/Main_Page">FIFA</a></div>
+						<p id="fifa" class="game-box-content">
+																<a href="/fifa/Tier_1_Tournaments" title="Tier 1 Tournaments">Tier 1 Tournaments</a><br />
+																		<a href="/fifa/FIFA_22/Team_of_the_Year_Cup" title="FIFA 22 Global Series - Team of the Year Cup">FIFA 22 Global Series - Team of the Year Cup</a><br />
+																		<a href="/fifa/FIFA_22/Team_of_the_Season_Cup" title="FGS TOTS Cup">FGS TOTS Cup</a><br />
+																		<a href="/fifa/Tekkz" title="Tekkz">Tekkz</a><br />
+																		<a href="/fifa/EISL/Season_1" title="eISL Season 1">eISL Season 1</a><br />
+															</p>
+					</div>
+									<div class="teamfortress-box game-box">
+												<input type="checkbox" class="toggle-button" id="toggle-teamfortress" />
+						<label for="toggle-teamfortress" class="toggle-button-label" id="toggle-teamfortress-label"></label>
+						<div class="wiki-header"><a href="/teamfortress/Main_Page">Team Fortress</a></div>
+						<p id="teamfortress" class="game-box-content">
+																<a href="/teamfortress/Froyotech" title="froyotech">froyotech</a><br />
+																		<a href="/teamfortress/B4nny" title="b4nny">b4nny</a><br />
+																		<a href="/teamfortress/Nursey" title="Nursey">Nursey</a><br />
+																		<a href="/teamfortress/Clockwork" title="Clockwork">Clockwork</a><br />
+																		<a href="/teamfortress/Yomps" title="yomps">yomps</a><br />
+															</p>
+					</div>
+									<div class="paladins-box game-box">
+												<input type="checkbox" class="toggle-button" id="toggle-paladins" />
+						<label for="toggle-paladins" class="toggle-button-label" id="toggle-paladins-label"></label>
+						<div class="wiki-header"><a href="/paladins/Main_Page">Paladins</a></div>
+						<p id="paladins" class="game-box-content">
+																<a href="/paladins/Ninjas_in_Pyjamas" title="Ninjas in Pyjamas">Ninjas in Pyjamas</a><br />
+																		<a href="/paladins/Natus_Vincere" title="Natus Vincere">Natus Vincere</a><br />
+																		<a href="/paladins/Paladins_World_Championship/2019" title="Paladins World Championship 2019">Paladins World Championship 2019</a><br />
+																		<a href="/paladins/G2_Esports" title="G2 Esports">G2 Esports</a><br />
+																		<a href="/paladins/Tier_1_Tournaments" title="Tier 1 Tournaments">Tier 1 Tournaments</a><br />
+															</p>
+					</div>
+							</div>
+		</div>
+		<h2 id="how-to-contribute">How To Contribute</h2>
+		<h3>It's easy, fun, and rewarding to help esports</h3>
+		<div class="whitebox">
+			<div class="content how-to">
+				<p>Contributing to the wiki is actually pretty easy and keep in mind that every more-correct-than-wrong contribution is valuable no matter how small. </p>
+				<p>When you visit Liquipedia, consider adding to it or correcting something, it doesn't have to take up much of your time and effort and it will help other visitors like yourself and Liquipedia as a whole.</p>
+				<p>Many people start by fixing typos, which is actually the easiest way to contribute. You just have to create an account&mdash;if you don't have one already&mdash;log in, click edit, find and fix the typo, click save, and you are done.</p>
+				<p>Another thing that many contributors start with is keeping tournament results up to date while the tournament is ongoing. Most of the times the pages are already set up by one of the more experienced contributors, and you just have to fill in the results as they happen. Filling a bracket is pretty straightforward. You log in, click on edit, find the bracket, update scores and fill in names. If you are unsure, just look at how it was done on other pages, either by just looking at the page itself, or by clicking edit to examine how the page was created. In general, looking at how things are done on other pages gives you a good idea of how you can do it yourself. </p>
+				<p>If you feel comfortable with wiki editing or if you want to learn things that are more advanced, feel free to browse our &quot;How to contribute&quot; sections you can find in the menus on the left of the wiki pages. You can <a rel="noopener" href="https://discord.gg/liquipedia" target="_blank">find us on our Discord server</a> where other contributors can help you.</p>
+				<h4>Logging in and registering</h4>
+				<p>To log in and edit Liquipedia you need a TeamLiquid account. To register an account, click on the &quot;<a href="https://tl.net/mytlnet/register" target="_blank">create account</a>&quot; link on any wiki page, just remember to follow the instructions and complete the registration.<br />
+					Once you have an account go click on the log in box in the top right and enter your details or if logged in on any of the three sites mentioned just click on the TL quick log in link. </p>
+				<h4>Editing</h4>
+				<p>There are two types of edit links. One is a tab at the top of the page which lets you edit all sections of the page at once. The second is on the far right side of all sub-headers, this allows you to edit the specific section you are on. <br />
+					When editing a page you will have some tools in a toolbar above the editing box to help you with the markup language that the wiki uses for things like bold text, italics, headers, and links. To know more about the wiki markup language visit <a rel="noopener" href="https://en.wikipedia.org/wiki/Help:Wiki_markup" target="_blank">Wikipedia's Help: Wiki markup</a>.</p>
+				<h4>Areas to help out with</h4>
+				<p>There are multiple things one can do to help out with on the wikis. Besides fixing typos or entering results you can:</p>
+				<ul>
+					<li>List an interview a player has done on the player's page.</li>
+					<li>Add social media links on a team's or player's page.</li>
+					<li>Fill out a player's page with information from interviews they've done and add references.</li>
+					<li>Write part of the history of an organization, tournament, player, or team and add references.</li>
+					<li>Update a player's or team's result pages with recent results.</li>
+					<li>Add the times when a match starts to brackets or groups.</li>
+					<li>Add general game information, either to an existing article or make a new one for a topic that is missing.</li>
+					<li>Update strategy pages and create pages for new strategies.</li>
+					<li>Create new pages for tournaments, players, or teams (if they meet the liquipedia notability guidelines for that game.)</li>
+					<li>Give the wiki the right to display your photographs and upload them to the wiki.</li>
+					<li>Develop new templates to make our wikis look good and make contributing easier.</li>
+					<li>Use knowledge of PHP, JS, CSS, HTML, or graphic design to improve on any element that you find the wikis are lacking in.</li>
+					<li>Help other contributors in our <a href="https://discord.gg/liquipedia" target="_blank">Discord server</a>, especially newer ones.</li>
+					<li>Spread the word that everyone can help grow Liquipedia.</li>
+					<li>Give us <a href="https://tl.net/forum/website-feedback/94785-liquipedia-feedback-thread" target="_blank">new ideas</a> of what we can do, even a paint scribble can help improving the wikis, if it gives us an idea of how a template could look.</li>
+					<li>Correct people when they call us &quot;LiquiDpedia&quot; with one d too many. Liquids flow and pronouncing Liquipedia flows easier than LiquiDpedia.</li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="content">
+				<div class="icon-list">
+					<a aria-label="Discord" rel="noopener" href="https://discord.gg/liquipedia" target="_blank"><i class="lp-icon lp-discord"></i></a>
+					<a aria-label="Twitter" rel="noopener" href="https://twitter.com/LiquipediaNet" target="_blank"><i class="lp-icon lp-twitter"></i></a>
+					<a aria-label="Facebook" rel="noopener" href="https://www.facebook.com/Liquipedia" target="_blank"><i class="lp-icon lp-facebook"></i></a>
+					<a aria-label="YouTube" rel="noopener" href="https://www.youtube.com/user/Liquipedia" target="_blank"><i class="lp-icon lp-youtube"></i></a>
+					<a aria-label="Twitch" rel="noopener" href="https://www.twitch.tv/liquipedia" target="_blank"><i class="lp-icon lp-twitch"></i></a>
+					<a aria-label="GitHub" rel="noopener" href="https://github.com/Liquipedia" target="_blank"><i class="lp-icon lp-github"></i></a>
+				</div>
+				<div class="disclaimer">
+					<p>Our <a href="https://liquipedia.net/commons/Liquipedia:Privacy_policy">Privacy Policy</a>. Text is licensed under <a rel="noopener" href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank">CC BY-SA</a>.<br />Files have varied licenses. Click on an image to see the image's page for more details.</p>
+				</div>
+			</div>
+		</div>
+		<script type="application/ld+json">
+			{
+			"@context": "http://schema.org",
+			"@type": "Organization",
+			"name": "Liquipedia",
+			"url": "https://liquipedia.net",
+			"logo": "https://liquipedia.net/images/liquipedia_logo.png",
+			"foundingDate": "2009-06-05",
+			"sameAs": [
+			"https://twitter.com/LiquipediaNet",
+			"https://www.facebook.com/Liquipedia",
+			"https://www.youtube.com/user/Liquipedia",
+			"https://www.twitch.tv/liquipedia",
+			"https://github.com/Liquipedia"
+			]
+			}
+		</script>
+		<script>
+			window.addEventListener( 'DOMContentLoaded', function() {
+				if ( 'localStorage' in window ) {
+					if ( localStorage[ 'lastWikiSearch' ] === undefined ) {
+						localStorage[ 'lastWikiSearch' ] = 'dota2';
+					}
+					document.getElementById( 'wikiselect' ).value = localStorage[ 'lastWikiSearch' ];
+					document.getElementById( 'search' ).action = '/' + localStorage[ 'lastWikiSearch' ] + '/index.php';
+					document.getElementById( 'wikiselect' ).onchange = function() {
+						localStorage[ 'lastWikiSearch' ] = this.value;
+						document.getElementById( 'search' ).action = '/' + this.value + '/index.php';
+					};
+				} else {
+					if ( !document.cookie.includes( 'liquipedia_last_wiki_search' ) ) {
+						document.cookie = 'liquipedia_last_wiki_search=dota2';
+					}
+					var startwiki = document.cookie.replace( /(?:(?:^|.*;\s*)liquipedia_last_wiki_search\s*\=\s*([^;]*).*$)|^.*$/, "$1" );
+					document.getElementById( 'wikiselect' ).value = startwiki;
+					document.getElementById( 'search' ).action = '/' + startwiki + '/index.php';
+					document.getElementById( 'wikiselect' ).onchange = function() {
+						document.cookie = 'liquipedia_last_wiki_search=' + this.value;
+						document.getElementById( 'search' ).action = '/' + this.value + '/index.php';
+					};
+				}
+			} );
+			window.dataLayer = window.dataLayer || [ ];
+			function gtag() {
+				dataLayer.push( arguments );
+			}
+			gtag( 'js', new Date() );
+			gtag( 'config', 'UA-576564-4', { 'anonymize_ip': true } );
+			gtag( 'config', 'UA-576564-21', { 'anonymize_ip': true } );
+		</script>
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-576564-4"></script>
+	</body>
+</html>
